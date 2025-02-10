@@ -67,7 +67,10 @@ public class UserControler {
     @PutMapping("/update")
     public int updateUser(@RequestBody User user) {
         try {
-            userService.updateUser(user);
+            int result = userService.updateUser(user);
+            if(result != 0) {
+                throw new Exception("User id is null ");
+            }
             logger.info("User updated with id " + user.getId());
             return 0;
         } catch (Exception e) {

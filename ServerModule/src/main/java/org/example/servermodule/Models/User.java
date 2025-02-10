@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(schema = "user")
 @Getter
@@ -18,6 +20,11 @@ public class User {
     Long phno;
     String email;
 
+    LocalDate date;
+
+    @Enumerated(EnumType.STRING)
+    Mode mode;
+
     public User(){
 
     }
@@ -27,11 +34,8 @@ public class User {
         this.phno = phno;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    enum Mode{
+        BACK_OFFICE, FRONT_OFFICE;
     }
 
-    public Long getId() {
-        return id;
-    }
 }

@@ -20,6 +20,9 @@ public class UserService {
 
     public Optional<User> getUser(Long id) {
         try {
+            if(id == null) {
+                throw new IllegalArgumentException("id is null");
+            }
             return userRepo.findById(id);
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -31,6 +34,9 @@ public class UserService {
     }
 
     public User addUser(User user) {
+        if(user == null) {
+            return user;
+        }
         return userRepo.save(user);
     }
 
@@ -41,6 +47,9 @@ public class UserService {
     }
 
     public int updateUser(User user) {
+        if(user.getId() == null) {
+            return 0;
+        }
         return userRepo.findByUser(user.getId(),user.getName(),user.getPhno(),user.getEmail());
     }
 }
