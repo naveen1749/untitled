@@ -1,0 +1,40 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<!--<button onclick="window.location.href='/save'">Add</button>-->
+<span th:text="${status}"/>
+<form action="/save" method ="get">
+    <button type="submit" text="Add a new User" > Add New User</button>
+</form>
+<table border="2" >
+    <thead>
+    <h1>Company Details : </h1>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>phno</td>
+        <td>mail</td>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr th:each="user : ${users}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.phno}"></td>
+            <td th:text="${user.email}"></td>
+            <td>
+                <form th:action="@{/delete/{id}(id=${user.id})}" method="post" onsubmit="return confirm ('are you sre ?')">
+                    <input type="hidden" name="_method" value="delete" />
+                    <button type="submit" th:text="Remove">remove</button>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+</body>

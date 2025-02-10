@@ -1,0 +1,38 @@
+<!DOCType html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <span th:text="${status}" />
+    <button onclick="window.location.href='/save'" autofocus> Add New User</button>
+
+    <table border="5">
+        <thead>
+            <tr>
+                <th> Name  </th>
+                <th> Email </th>
+                <th> phno</th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="users: ${user}">
+                <td th:text="${users.name}"></td>
+                <td th:text="${users.email}"></td>
+                <td th:text="${users.phno}"></td>
+                <td>
+                    <form th:action="@{/delete/{id}(id=${users.id})}" method="post"
+                    onsubmit="return confirm('Are you sure?')">
+                        <input type="hidden" name="_method" value="delete" />
+                        <button type="submit">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

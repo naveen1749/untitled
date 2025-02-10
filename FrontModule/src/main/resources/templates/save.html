@@ -1,0 +1,15 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <form th:action="@{/save}" method="post">
+        name : <input type="text" name="name" />
+        email : <input type="text" name="email" />
+        phno : <input type="number" name="phno" />
+        <button type="submit">Save</button>
+    </form>
+</body>

@@ -1,0 +1,400 @@
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T122309.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 4,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T121939.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T121932.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T121917.200.json
+
+###
+
+PUT http://localhost:8080/update
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T021404.200.json
+
+###
+
+PUT http://localhost:8080/update
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T021231.200.json
+
+###
+
+PUT http://localhost:8080/update
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T020647.200.json
+
+###
+
+PUT http://localhost:8080/update
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 3,
+  "email": "dfgdfgdfg",
+  "name": "dfgdfgaete",
+  "phno": 324
+}
+
+<> 2025-02-10T020546.200.json
+
+###
+
+DELETE http://localhost:8080/delete/2
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-10T015210.200.json
+
+###
+
+POST http://localhost:8080/delete/2
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-10T015122.405.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-10T015004.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T181621.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T181617.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T181616.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T181615.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T181609.200.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T180906.500.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T180904.500.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T180614.500.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T180452.500.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T180431.500.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T180426.500.json
+
+###
+
+POST http://localhost:8080/save
+Content-Type: application/json
+Content-Length: 66
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 5,
+  "name": "",
+  "phno": 0,
+  "email": "dghsdfsgfj"
+
+}
+
+<> 2025-02-09T175919.200.json
+
+###
+
