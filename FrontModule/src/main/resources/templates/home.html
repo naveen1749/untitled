@@ -3,6 +3,16 @@
       xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+
+        }
+        table{
+            border: 2px black;
+        }
+    </style>
 </head>
 <body>
 <!--<button onclick="window.location.href='/save'">Add</button>-->
@@ -14,10 +24,13 @@
     <thead>
     <h1>Company Details : </h1>
     <tr>
-        <td>id</td>
-        <td>name</td>
-        <td>phno</td>
-        <td>mail</td>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Phone No</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Mode</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -27,6 +40,8 @@
             <td th:text="${user.name}"></td>
             <td th:text="${user.phno}"></td>
             <td th:text="${user.email}"></td>
+            <td th:text="${user.date}"></td>
+            <td th:text="${user.mode}"></td>
             <td>
                 <form th:action="@{/delete/{id}(id=${user.id})}" method="post" onsubmit="return confirm ('are you sre ?')">
                     <input type="hidden" name="_method" value="delete" />

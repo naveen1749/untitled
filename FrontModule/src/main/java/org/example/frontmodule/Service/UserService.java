@@ -2,7 +2,7 @@ package org.example.frontmodule.Service;
 
 import jakarta.servlet.http.HttpSession;
 import org.example.frontmodule.Models.UserTemp;
-import org.example.servermodule.Models.User;
+import org.example.frontmodule.Models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.http.HttpMethod;
@@ -22,6 +22,11 @@ public class UserService {
 
     @Autowired
     RestTemplate restTemplate;
+
+    @GetMapping("/")
+    public String index() {
+        return "redirect:/all";
+    }
 
     @GetMapping("/all")
     public String getAll(Model model) {

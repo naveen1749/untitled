@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+
 @Setter
 @Getter
 @Component
@@ -13,13 +15,18 @@ public class UserTemp{
     public UserTemp() {
     }
 
-    public UserTemp(String name, Long phno, String email) {
-        this.name = name;
-        this.phno = phno;
-        this.email = email;
-    }
-
     String name;
     Long phno;
     String email;
+
+    LocalDate date;
+    Mode mode;
+
+    public UserTemp(String name, Long phno, String email, LocalDate date, Mode mode) {
+        this.name = name;
+        this.phno = phno;
+        this.email = email;
+        this.date = date;
+        this.mode = mode;
+    }
 }

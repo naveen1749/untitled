@@ -1,15 +1,29 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
-      xmlns="http://www.w3.org/1999/html">
+      xmlns="http://www.w3.org/1999/html" >
 <head>
     <meta charset="UTF-8">
+    <style>
+        *{
+            margin: 4px;
+            padding: 4px;
+
+        }
+    </style>
 </head>
 <body>
 
-    <form th:action="@{/save}" method="post">
-        name : <input type="text" name="name" />
-        email : <input type="text" name="email" />
-        phno : <input type="number" name="phno" />
+    <form th:action="@{/save}" method="post" >
+        name : <input type="text" name="name" autofocus /><br/>
+        email : <input type="text" name="email" /><br/>
+        phno : <input type="number" name="phno" /><br/>
+        Date : <input type="date" name="date" /><br/>
+        Mode : <select list="list" name="mode" >
+                    <datalist id="list">
+                        <option value="BACK_OFFICE">BACK_OFFICE</option>
+                        <option value="FRONT_OFFICE">FRONT_OFFICE</option>
+                    </datalist>
+        </select><br/>
         <button type="submit">Save</button>
     </form>
 </body>
