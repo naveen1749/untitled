@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51dba6a-df6f-4f5f-8632-e92029a026f1" name="Changes" comment="" />
+    <list default="true" id="e51dba6a-df6f-4f5f-8632-e92029a026f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +52,7 @@
     "Spring Boot.FrontModuleApplication.executor": "Run",
     "Spring Boot.SecondFrontModuleApplication.executor": "Run",
     "Spring Boot.ServerModuleApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Admin/Downloads/untitled/FrontModule/src/test/java",
@@ -133,7 +135,7 @@
       <workItem from="1739036589351" duration="7361000" />
       <workItem from="1739130771625" duration="4234000" />
       <workItem from="1739135033459" duration="134000" />
-      <workItem from="1739162680099" duration="13193000" />
+      <workItem from="1739162680099" duration="14464000" />
     </task>
     <servers />
   </component>
