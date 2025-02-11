@@ -50,6 +50,6 @@ public class UserService {
         if(user.getId() == null) {
             return 0;
         }
-        return userRepo.findByUser(user.getId(),user.getName(),user.getPhno(),user.getEmail());
+        return userRepo.findByUser(user.getId(),user.getName(),user.getPhno(),user.getEmail(), user.getMode().toString(),user.getDate());
     }
 }

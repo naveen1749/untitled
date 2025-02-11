@@ -1,0 +1,36 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html" >
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            margin: 4px;
+            padding: 4px;
+
+        }
+    </style>
+</head>
+<body>
+
+<form th:action="@{/updates}" method="post">
+    <!-- Spring Boot recognizes this as a PUT request -->
+    <input type="hidden" name="_method" value="PUT" />
+
+    <input type="hidden" name="id" th:value="${user.id}" />
+
+    Name: <input type="text" name="name" th:value="${user.name}" autofocus /><br/>
+    Email: <input type="text" name="email" th:value="${user.email}" /><br/>
+    Phone: <input type="number" name="phno" th:value="${user.phno}" /><br/>
+    Date: <input type="date" name="date" th:value="${user.date}" /><br/>
+
+    Mode:
+    <select name="mode">
+        <option value="BACK_OFFICE" th:selected="${user.mode == 'BACK_OFFICE'}">BACK_OFFICE</option>
+        <option value="FRONT_OFFICE" th:selected="${user.mode == 'FRONT_OFFICE'}">FRONT_OFFICE</option>
+    </select><br/>
+
+    <button type="submit">Save</button>
+</form>
+
+</body>

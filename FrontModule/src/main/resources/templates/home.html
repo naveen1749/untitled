@@ -31,6 +31,7 @@
         <th>Date</th>
         <th>Mode</th>
         <th>Actions</th>
+        <th>Update</th>
     </tr>
     </thead>
     <tbody>
@@ -48,6 +49,18 @@
                     <button type="submit" th:text="Remove">remove</button>
                 </form>
             </td>
+            <td>
+                <form th:action="@{/update}" method="post">
+                    <input type="hidden" name="id" th:value="${user.id}" />
+                    <input type="hidden" name="name" th:value="${user.name}" />
+                    <input type="hidden" name="phno" th:value="${user.phno}" />
+                    <input type="hidden" name="email" th:value="${user.email}" />
+                    <input type="hidden" name="date" th:value="${user.date}" />
+                    <input type="hidden" name="mode" th:value="${user.mode}" />
+                    <button type="submit">Update</button>
+                </form>
+            </td>
+
         </tr>
     </tbody>
 

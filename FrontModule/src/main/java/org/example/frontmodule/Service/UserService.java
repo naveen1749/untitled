@@ -5,6 +5,7 @@ import org.example.frontmodule.Models.UserTemp;
 import org.example.frontmodule.Models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -55,6 +56,19 @@ public class UserService {
 
         User temp = restTemplate.postForObject("http://localhost:8080/save", user, User.class);
         model.addAttribute("status", "User saved with id " + temp.getId());
+        return "redirect:/all";
+    }
+
+    @PostMapping("/update")
+    public String update(@ModelAttribute User user, Model model){
+     model.addAttribute("user",user);
+     return "update";
+    }
+
+    @PostMapping("/updates")
+    public String updates(@ModelAttribute User user, Model model){
+        model.addAttribute("status","user dateded "+ user.getId());
+        restTemplate.exchange("http://localhost:8080/update", HttpMethod.PUT, new HttpEntity<>(user),Void.class,user);
         return "redirect:/all";
     }
 }
